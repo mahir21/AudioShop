@@ -2,7 +2,8 @@ import Image from "next/image";
 import { stripe } from "@/lib/stripe";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { Carousel } from "@/components/ui/carousel";
+import { Carousel } from "@/components/ui/Carousel";
+
 export default async function Home() {
   const products = await stripe.products.list({
     expand: ["data.default_price"],
