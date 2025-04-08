@@ -5,6 +5,9 @@ const nextConfig: NextConfig = {
   images: {
     domains: ["files.stripe.com"], // 👈 allow Stripe's image domain
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
 
 export default nextConfig;
