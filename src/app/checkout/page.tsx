@@ -64,16 +64,15 @@ export default function CheckoutPage() {
           </div>
         </CardContent>
       </Card>
-      <form action={checkoutAction} className="max-w-md mx-auto">
-        <input type="hidden" name="items" value={JSON.stringify(items)} />
-        <Button
-          type="submit"
-          variant="default"
-          className="w-full hover:bg-yellow-500"
-        >
-          Proceed to Payment
-        </Button>
-      </form>
+
+      <input type="hidden" name="items" value={JSON.stringify(items)} />
+      <Button
+        variant="default"
+        className="w-full
+       hover:bg-yellow-500"
+      >
+        Proceed to Payment
+      </Button>
     </div>
   );
 }
