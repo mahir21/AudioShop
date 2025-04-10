@@ -14,7 +14,7 @@ export default function CheckoutPage() {
     0
   );
 
-  if (items.length === 0) {
+  if (total === 0 || items.length === 0) {
     return (
       <div className="container mx-auto px-4 py-8 text-center">
         <h1 className="text-3xl font-bold mb-4">Your Cart is Empty</h1>
@@ -65,14 +65,12 @@ export default function CheckoutPage() {
         </CardContent>
       </Card>
 
-      <input type="hidden" name="items" value={JSON.stringify(items)} />
-      <Button
-        variant="default"
-        className="w-full
-       hover:bg-yellow-500"
-      >
-        Proceed to Payment
-      </Button>
+      <form action={checkoutAction} className="max-w-md mx-auto">
+        <input type="hidden" name="items" value={JSON.stringify(items)} />
+        <Button type="submit" variant="default" className="w-full">
+          Proceed to Payment
+        </Button>
+      </form>
     </div>
   );
 }

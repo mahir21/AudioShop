@@ -13,6 +13,23 @@ export default async function Home() {
   return (
     <div>
       <section className="rounded bg-neutral-100 py-8 sm:py-12">
+        <div
+          class="badge-base LI-profile-badge"
+          data-locale="en_US"
+          data-size="medium"
+          data-theme="light"
+          data-type="HORIZONTAL"
+          data-vanity="mahir-jeet-62a0031a7"
+          data-version="v1"
+        >
+          <a
+            class="badge-base__link LI-simple-link"
+            href="https://www.linkedin.com/in/mahir-jeet-62a0031a7?trk=profile-badge"
+          >
+            Mahir Jeet
+          </a>
+        </div>
+
         <div className="mx-auto grid grid-cols-1 items-center justify-items-center gap-8 px-8 sm:px-16 md:grid-cols-2">
           <div className="max-w-md space-y-4">
             <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
